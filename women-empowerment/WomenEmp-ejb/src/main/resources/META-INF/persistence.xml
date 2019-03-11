@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="WomenEmp-ejb">
+		<jta-data-source>java:/allah</jta-data-source>
+		<class>tn.esprit.entities.Admin</class>
+		<class>tn.esprit.entities.Agent</class>
+		<class>tn.esprit.entities.Comment</class>
+		<class>tn.esprit.entities.Donation</class>
+		<class>tn.esprit.entities.Event</class>
+		<class>tn.esprit.entities.Household</class>
+		<class>tn.esprit.entities.Locality</class>
+		<class>tn.esprit.entities.Member</class>
+		<class>tn.esprit.entities.Participation</class>
+		<class>tn.esprit.entities.ParticipationId</class>
+		<class>tn.esprit.entities.Post</class>
+		<class>tn.esprit.entities.PostLike</class>
+		<class>tn.esprit.entities.Review</class>
+		<class>tn.esprit.entities.Training</class>
+	
+		<class>tn.esprit.entities.User</class>
+		<class>tn.esprit.entities.WomanTraining</class>
+		<class>tn.esprit.entities.Women</class>
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+			<property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/woman"/>
+			<property name="hibernate.connection.username" value="root"/>
+			<property name="hibernate.connection.password" value=""/>
+			<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+		</properties>
+	</persistence-unit>
+</persistence>
